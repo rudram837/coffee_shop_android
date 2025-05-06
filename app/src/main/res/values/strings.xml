@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CafeD</string>
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID</string>
+    <string name="facebook_app_id">3947337535551269</string>
+    <string-array name="payment">
+        <item>UPI</item>
+        <item>Cash On Delivery</item>
+    </string-array>
+</resources>

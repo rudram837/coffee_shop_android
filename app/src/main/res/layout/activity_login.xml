@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_grad"
+    tools:context=".Activity.LoginActivity">
+
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginStart="24dp"
+        android:text="Welcome back,"
+        android:fontFamily="@font/lobstertwo_regular"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="24dp"
+        android:text="Login to your Account"
+        android:fontFamily="@font/lobstertwo_regular"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/mailbutn"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/mail"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/lobstertwo_regular"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:hint="Mail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/pwdbutn"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/lobstertwo_regular"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/mailbutn"
+        app:layout_constraintStart_toStartOf="@+id/mailbutn"
+        app:layout_constraintTop_toBottomOf="@+id/mailbutn" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Or"
+        android:fontFamily="@font/lobstertwo_regular"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/pwdbutn"
+        app:layout_constraintStart_toStartOf="@+id/pwdbutn"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Continue with"
+        android:fontFamily="@font/lobstertwo_regular"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"/>
+
+    <LinearLayout
+        android:id="@+id/liner_Lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:paddingStart="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/black"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/googlebtn"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/whitepattern"
+        android:drawableLeft="@drawable/google"
+        android:fontFamily="@font/lobstertwo_old"
+        android:textSize="22sp"
+        android:paddingLeft="15sp"
+        android:text="Google"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/fbbtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/liner_Lay" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fbbtn"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/whitepattern"
+        android:drawableLeft="@drawable/facebook"
+        android:fontFamily="@font/lobstertwo_old"
+        android:textSize="22sp"
+        android:paddingLeft="15sp"
+        android:text="Facebook"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/googlebtn"
+        app:layout_constraintTop_toBottomOf="@+id/liner_Lay" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginbtn"
+        android:layout_width="157dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_bg"
+        android:fontFamily="@font/lobstertwo_old"
+        android:textSize="30sp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwdbutn" />
+
+    <TextView
+        android:id="@+id/donthavebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lobstertwo_italic"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="Don't have account?\n Sign Up here"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/fbbtn"
+        app:layout_constraintStart_toStartOf="@+id/googlebtn"
+        app:layout_constraintTop_toBottomOf="@+id/fbbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
